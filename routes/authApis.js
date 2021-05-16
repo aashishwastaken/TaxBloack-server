@@ -53,9 +53,9 @@ routes.post('/register',
             }
 
             let user = await UserModel.create({ name, email, password, contact, address });
-            console.error('user', user);
+//             console.error('user', user);
             let resData = await login(email, password);
-            console.log(resData);
+//             console.log(resData);
             res.json(resData);
 
         } catch (err) {
