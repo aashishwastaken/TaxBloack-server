@@ -13,7 +13,7 @@ routes.post('/new',
         // console.log(email, password, 'register');
         try {
             
-            if (!amount) {
+            if (!amount || !Number(amount)) {
                 throw new Error('Enter an amount');
             }
             if (!strt) {
