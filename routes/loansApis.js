@@ -44,7 +44,7 @@ routes.post('/new',
                 if(!doc){
                   return res.json({ success: false, message: 'No users found for this email' });
                }else{
-                  loan.sort((a,b)=>new Date(a.issuedOn)>new Date(b.issuedOn)?-1:1);
+                 
 
                   return res.json({ success: true, loan });
                    
